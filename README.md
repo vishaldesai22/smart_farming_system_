@@ -1,56 +1,67 @@
-# smart_farming_system_
-📌 GitHub Project Description
-🌾 Smart Farming Alert System
+# 🌾 Smart Farming Alert System
 
-A Flask-based web application that helps farmers receive real-time weather-based alerts to protect crops from sudden climate changes. The system automatically monitors environmental conditions and sends notifications in Marathi, enabling timely decision-making.
+A Flask-based web application that monitors real-time weather conditions and automatically sends crop-specific alerts to farmers. The system helps farmers take timely actions and reduce crop damage caused by sudden climate changes.
 
-🚀 Key Features
-👨‍🌾 Admin Dashboard
-Add, update, and delete farmers
-Send alerts (individual or broadcast)
-View alert history
-🌦️ Weather Monitoring
-Fetches real-time weather data using API
-Uses latitude & longitude for accurate location tracking
-⏱️ Automatic Alerts
-Scheduler runs every 5 minutes
-Detects climate changes (temperature, humidity)
-Sends alerts automatically
-🌱 Season-Based Intelligence
-Different alerts for Summer, Monsoon, and Winter
-Crop-specific alert logic
-📧 Email Notification System
-Sends alerts via Gmail SMTP
-Supports bulk and individual messaging
-Marathi language alerts
-👤 Farmer Dashboard
-Login system for farmers
-View crop details and alerts
+---
 
-🛠️ Tech Stack
-Backend: Python, Flask
-Frontend: HTML, Tailwind CSS
-Database: SQLite
-API: OpenWeather API
-Scheduler: Python schedule library
-Email Service: SMTP (Gmail)
+## 🚀 Features
+
+### 👨‍💼 Admin Panel
+- Add, update, and delete farmers
+- Send alerts (individual or broadcast)
+- View alert history
+
+### 👨‍🌾 Farmer Dashboard
+- Secure login system
+- View crop details and weather data
+- Receive alerts in Marathi
+
+### 🌦️ Weather Monitoring
+- Uses OpenWeather API
+- Fetches real-time weather using latitude & longitude
+
+### ⏱️ Automatic Alert System
+- Runs every 5 minutes using scheduler
+- Detects sudden climate changes
+- Sends automated alerts
+
+### 🌱 Smart Logic
+- Season-based alerts (Summer / Monsoon / Winter)
+- Crop-specific conditions
+
+### 📧 Email Notification
+- Gmail SMTP integration
+- Supports bulk and individual alerts
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend:** Python, Flask  
+- **Frontend:** HTML, Tailwind CSS  
+- **Database:** SQLite  
+- **API:** OpenWeather API  
+- **Scheduler:** schedule library  
+- **Email:** SMTP (Gmail)
+
+Admin → Add Farmer → Database
+↓
+Scheduler (5 min)
+↓
+Fetch Weather Data
+↓
+Check Conditions
+↓
+Send Alerts
+↓
+Farmer Dashboard
 
 
-📊 System Workflow
-Admin → Add Farmer → Store in Database
-                        ↓
-                Scheduler (5 min)
-                        ↓
-              Fetch Weather Data
-                        ↓
-             Check Alert Conditions
-                        ↓
-              Send Email Alerts
-                        ↓
-              Farmer Dashboard
+---
+
+## 📁 Project Structure
 
 
-📁 Project Structure
 smart_farming_system/
 │
 ├── app.py
@@ -63,20 +74,25 @@ smart_farming_system/
 └── database/
 
 
-⚙️ How to Run
-git clone <your-repo-link>
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/your-username/smart-farming-system.git
 cd smart_farming_system
+2. Create Virtual Environment
 python -m venv venv
 venv\Scripts\activate
+3. Install Dependencies
 pip install -r requirements.txt
+4. Run Application
 python app.py
 
-Open:
+Open in browser:
 
 http://127.0.0.1:5000
-
-
-
 🔐 Configuration
 
 Update config.py:
@@ -87,13 +103,18 @@ WEATHER_API_KEY = "your_api_key"
 ⚠️ Limitations
 Uses email instead of SMS/WhatsApp
 Basic authentication system
-Depends on internet connectivity
-
-
+Depends on internet connection
 🚀 Future Improvements
 SMS & WhatsApp alerts
-Mobile application
-AI-based crop recommendations
-Real-time push notifications
+Mobile app version
+AI-based crop prediction
+Push notifications
 🎯 Conclusion
 
+This system provides a smart solution for farmers by automating weather-based alerts and improving decision-making for crop protection.
+
+👨‍💻 Author
+
+Vishal Desai
+
+## 📊 System Workflow
