@@ -100,15 +100,21 @@ Update config.py:
 EMAIL = "your_email@gmail.com"
 APP_PASSWORD = "your_app_password"
 WEATHER_API_KEY = "your_api_key"
+
+
 ⚠️ Limitations
 Uses email instead of SMS/WhatsApp
 Basic authentication system
 Depends on internet connection
+
+
 🚀 Future Improvements
 SMS & WhatsApp alerts
 Mobile app version
 AI-based crop prediction
 Push notifications
+
+
 🎯 Conclusion
 
 This system provides a smart solution for farmers by automating weather-based alerts and improving decision-making for crop protection.
